@@ -7,7 +7,7 @@
       "RelativeMoniker": "D:0:0:{B8312C0E-93C5-4238-9932-76FA14DE16D0}|src\\launcher.csproj|solutionrelative:src\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B8312C0E-93C5-4238-9932-76FA14DE16D0}|src\\launcher.csproj|c:\\users\\user\\documents\\github\\zerogravity-launcher\\src\\loader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{B8312C0E-93C5-4238-9932-76FA14DE16D0}|src\\launcher.csproj|C:\\Users\\User\\Documents\\GitHub\\Zerogravity-Launcher\\src\\loader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{B8312C0E-93C5-4238-9932-76FA14DE16D0}|src\\launcher.csproj|solutionrelative:src\\loader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -54,8 +54,7 @@
               "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\Zerogravity-Launcher\\src\\Loader.cs [Design]",
               "RelativeToolTip": "src\\Loader.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-29T10:36:39.844Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-12-29T10:36:39.844Z"
             },
             {
               "$type": "Document",
@@ -79,8 +78,7 @@
               "RelativeToolTip": "src\\Login.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-29T10:20:44.516Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-29T10:20:44.516Z"
             }
           ]
         }

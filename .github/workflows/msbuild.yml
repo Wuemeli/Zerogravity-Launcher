@@ -45,7 +45,7 @@ jobs:
     - name: Release
       uses: softprops/action-gh-release@v2
       with:
-          files: src\bin\Release\net8.0-windows\pzg-launcher.exe
+          files: D:\a\Zerogravity-Launcher\Zerogravity-Launcher\src\bin\Release\net8.0-windows\pzg-launcher.exe
           token: ${{ secrets.GITHUB_TOKEN }}
           make_latest: true
           generate_release_notes: true
