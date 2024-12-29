@@ -45,7 +45,7 @@ jobs:
     - name: Build Windows Installer MSI from exe file
       uses: AliceOh/CreateWindowsInstaller@1.0.0
       with:
-          exefile: 'D:\a\Zerogravity-Launcher\Zerogravity-Launcher\src\bin\Release\net8.0-windows\pzg-launcher.exe'
+          exefile: 'src\bin\Release\net8.0-windows\pzg-launcher.exe'
 
     - name: Release
       uses: softprops/action-gh-release@v2
