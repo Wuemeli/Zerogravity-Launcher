@@ -90,12 +90,10 @@ namespace Project_ZeroGravity_Loader
 
             string appdata = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) + "\\ZeroGravity";
 
-            //were using data.txt now
-            string emailPath = Path.Combine(appdata, "email.txt");
-            string passwordPath = Path.Combine(appdata, "password.txt");
+            string[] data = File.ReadAllLines(Path.Combine(appdata, "data.txt"));
 
-            string email = File.ReadAllText(emailPath);
-            string password = File.ReadAllText(passwordPath);
+            string email = data[0];
+            string password = data[1];
 
             if (!File.Exists(appdata + "\\FortniteLauncher.exe"))
                 DownloadFile("https://backend.zerogravity.rip/assets/FortniteLauncher.txt", appdata + "\\FortniteLauncher.exe");
