@@ -39,19 +39,10 @@ jobs:
       # See https://docs.microsoft.com/visualstudio/msbuild/msbuild-command-line-reference
       run: msbuild /m /p:Configuration=${{env.BUILD_CONFIGURATION}} ${{env.SOLUTION_FILE_PATH}}
 
-    - name: Install go-msi
-      run: choco install -y "go-msi"
-
-    - name: Build Windows Installer MSI from exe file
-      uses: AliceOh/CreateWindowsInstaller@1.0.0
-      with:
-          exefile: 'src\bin\Release\net8.0-windows\pzg-launcher.exe'
-
     - name: Release
       uses: softprops/action-gh-release@v2
       with:
-          files: |
-            D:\a\Zerogravity-Launcher\Zerogravity-Launcher\src\bin\Release\net8.0-windows\pzg-launcher.exe.msi
+          files: D:\a\Zerogravity-Launcher\Zerogravity-Launcher\src\bin\Release\net8.0-windows\pzg-launcher.exe
           token: ${{ secrets.GITHUB_TOKEN }}
           make_latest: true
           generate_release_notes: true
