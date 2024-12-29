@@ -92,7 +92,7 @@
     <PackageReference Include="System.Text.Encoding.CodePages" Version="8.0.0" />
     <PackageReference Include="Ububox.G2Crack" Version="2.0.4.6" />
     <PackageReference Include="ZstdSharp.Port" Version="0.8.1" />
-    <PackageReference Include="Microsoft.AspNetCore.SystemWebAdapters" Version="1.3.0" />
+    <PackageReference Include="Microsoft.AspNetCore.SystemWebAdapters" Version="1.4.0" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Remove="Form1.resx" />
