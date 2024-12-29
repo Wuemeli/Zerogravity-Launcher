@@ -21,7 +21,7 @@ jobs:
         run: dotnet build --configuration Release
 
       - name: Generate Update Files
-        run: powershell -ExecutionPolicy Bypass -File ./build/generate.ps1
+        run: powershell -ExecutionPolicy Bypass -File ./build/update.ps1
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v1
