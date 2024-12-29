@@ -1,0 +1,41 @@
+{
+  "product": "ProjectZerogravityLauncher",
+  "company": "Wuemeli",
+  "license": "LICENSE",
+  "upgrade-code": "",
+  "files": {
+    "guid": "",
+    "items": ["bin/Release/net8.0-windows/pzg-launcher.exe"]
+  },
+  "env": {
+    "guid": "",
+    "vars": [
+      {
+        "name": "PATH",
+        "value": "[INSTALLDIR]",
+        "permanent": "no",
+        "system": "no",
+        "action": "set",
+        "part": "last"
+      }
+    ]
+  },
+  "shortcuts": {
+    "guid": "",
+    "items": [
+      {
+        "name": "ProjectZerogravityLauncher",
+        "description": "Game Launcher for Project Zerogravity",
+        "target": "[INSTALLDIR]\\pzg-launcher.exe",
+        "wdir": "INSTALLDIR",
+        "arguments": "",
+        "icon": ""
+      }
+    ]
+  },
+  "choco": {
+    "description": "Project Zerogravity Launcher",
+    "tags": "msi, wix, installer",
+    "license-url": "https://opensource.org/licenses/GPL-3.0",
+  }
+}
