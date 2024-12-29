@@ -47,4 +47,7 @@ jobs:
     - name: Release
       uses: softprops/action-gh-release@v2
       with:
+          name: Release ${{env.BUILD_CONFIGURATION}} ${{github.sha}}
           files: ./bin/${{env.BUILD_CONFIGURATION}}/*.exe
+          make_latest: true
+          generate_release_notes: true
