@@ -20,14 +20,8 @@ jobs:
       - name: Build
         run: dotnet build --configuration Release
 
-      - name: Generate update files
-        uses: appleboy/ssh-action@master
-        with:
-          host: ${{ secrets.HOST }}
-          username: ${{ secrets.USERNAME }}
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
-          script: |
-            powershell -ExecutionPolicy Bypass -File ./build/update.ps1 -version $(dotnet version)
+      - name: Generate Update Files
+        run: powershell -ExecutionPolicy Bypass -File ./build/generate.ps1
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v1
