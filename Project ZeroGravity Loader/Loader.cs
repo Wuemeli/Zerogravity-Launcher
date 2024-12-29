@@ -90,6 +90,7 @@ namespace Project_ZeroGravity_Loader
 
             string appdata = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) + "\\ZeroGravity";
 
+            //were using data.txt now
             string emailPath = Path.Combine(appdata, "email.txt");
             string passwordPath = Path.Combine(appdata, "password.txt");
 
