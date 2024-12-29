@@ -49,5 +49,3 @@ jobs:
         artifacts: "bin/Release/zerogravity launcher.exe"
         makeLatest: true
         name: "Latest Release"
-        tag: "latest"
-        ref: "main"
