@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35122.118
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "launcher", "src\launcher.csproj", "{B8312C0E-93C5-4238-9932-76FA14DE16D0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B8312C0E-93C5-4238-9932-76FA14DE16D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8312C0E-93C5-4238-9932-76FA14DE16D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8312C0E-93C5-4238-9932-76FA14DE16D0}.Debug|x64.ActiveCfg = Debug|x64
+		{B8312C0E-93C5-4238-9932-76FA14DE16D0}.Debug|x64.Build.0 = Debug|x64
+		{B8312C0E-93C5-4238-9932-76FA14DE16D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8312C0E-93C5-4238-9932-76FA14DE16D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8312C0E-93C5-4238-9932-76FA14DE16D0}.Release|x64.ActiveCfg = Release|x64
+		{B8312C0E-93C5-4238-9932-76FA14DE16D0}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2A7A6C1F-A2A0-4AAF-98E8-0E5653F50656}
+	EndGlobalSection
+	GlobalSection(AutomaticVersions) = postSolution
+		UpdateAssemblyVersion = True
+		UpdateAssemblyFileVersion = False
+		UpdateAssemblyInfoVersion = False
+		AssemblyVersionSettings = Increment.Increment.Increment.Increment
+		UpdatePackageVersion = False
+		AssemblyInfoVersionType = SettingsVersion
+		InheritWinAppVersionFrom = None
+	EndGlobalSection
+EndGlobal
