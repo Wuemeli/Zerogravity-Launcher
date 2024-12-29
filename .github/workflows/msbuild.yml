@@ -23,7 +23,7 @@ env:
 permissions:
   packages: write
   contents: write
-  
+
 jobs:
   build:
     runs-on: windows-latest
@@ -51,3 +51,5 @@ jobs:
         GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         title: Release ${{ github.sha }}
+        files: |
+          ./bin/Release/*
