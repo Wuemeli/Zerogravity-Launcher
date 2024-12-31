@@ -109,20 +109,20 @@ namespace Project_ZeroGravity_Loader
             if (!File.Exists(gamePath + "\\Engine\\Binaries\\ThirdParty\\NVIDIA\\NVaftermath\\Win64\\GFSDK_Aftermath_Lib.x64.dll"))
                 DownloadFile("https://backend.zerogravity.rip/assets/redirect.txt", gamePath + "\\Engine\\Binaries\\ThirdParty\\NVIDIA\\NVaftermath\\Win64\\GFSDK_Aftermath_Lib.x64.dll");
 
-            if (!File.Exists(gamePath + "\\EAC.zip"))
-                DownloadFile("https://backend.zerogravity.rip/assets/EAC.txt", gamePath + "\\EAC.zip");
+            //if (!File.Exists(gamePath + "\\EAC.zip"))
+            //    DownloadFile("https://backend.zerogravity.rip/assets/EAC.txt", gamePath + "\\EAC.zip");
 
-            File.Delete(gamePath + "\\EAC.exe");
+            //File.Delete(gamePath + "\\EAC.exe");
 
-            if (Directory.Exists(gamePath + "\\EasyAntiCheat"))
-            {
-                Directory.Delete(gamePath + "\\EasyAntiCheat", true);
-                Console.WriteLine("Folder EasyAntiCheat deleted successfully.");
-            }
+            //if (Directory.Exists(gamePath + "\\EasyAntiCheat"))
+            //{
+            //    Directory.Delete(gamePath + "\\EasyAntiCheat", true);
+            //    Console.WriteLine("Folder EasyAntiCheat deleted successfully.");
+            //}
 
-            ZipFile.ExtractToDirectory(gamePath + "\\EAC.zip", gamePath);
+            //ZipFile.ExtractToDirectory(gamePath + "\\EAC.zip", gamePath);
 
-            File.Delete(gamePath + "\\EAC.zip");
+            //File.Delete(gamePath + "\\EAC.zip");
 
             Process launcher = new Process();
             launcher.StartInfo.FileName = appdata + "\\FortniteLauncher.exe";
@@ -130,7 +130,7 @@ namespace Project_ZeroGravity_Loader
             launcher.StartInfo.WindowStyle = ProcessWindowStyle.Hidden;
 
             Process shipping = new Process();
-            shipping.StartInfo.FileName = gamePath + "\\EAC.exe";
+            shipping.StartInfo.FileName = gamePath + "\\FortniteGame\\Binaries\\Win64\\FortniteClient-Win64-Shipping.exe";
             shipping.StartInfo.Arguments =
                 $"-epicapp=Fortnite -epicenv=Prod -epiclocale=en-us -epicportal -skippatchcheck -nobe -fromfl=eac -fltoken=3db3ba5dcbd2e16703f3978d -caldera=eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50X2lkIjoiYmU5ZGE1YzJmYmVhNDQwN2IyZjQwZWJhYWQ4NTlhZDQiLCJnZW5lcmF0ZWQiOjE2Mzg3MTcyNzgsImNhbGRlcmFHdWlkIjoiMzgxMGI4NjMtMmE2NS00NDU3LTliNTgtNGRhYjNiNDgyYTg2IiwiYWNQcm92aWRlciI6IkVhc3lBbnRpQ2hlYXQiLCJub3RlcyI6IiIsImZhbGxiYWNrIjpmYWxzZX0.VAWQB67RTxhiWOxx7DBjnzDnXyyEnX7OljJm-j2d88G_WgwQ9wrE6lwMEHZHjBd1ISJdUO1UVUqkfLdU5nofBQ -AUTH_LOGIN={email} -AUTH_PASSWORD={password} -AUTH_TYPE=epic";
             shipping.StartInfo.UseShellExecute = true;
@@ -304,7 +304,7 @@ namespace Project_ZeroGravity_Loader
         private async void guna2Button9_Click(object sender, EventArgs eventArgs)
         {
             var handle = GetConsoleWindow();
-            string downloadUrl = "https://public.simplyblk.xyz/6.31.rar";
+            string downloadUrl = "https://store-eu-par-3.gofile.io/download/web/b24f66e9-62b9-40b0-b40a-c3cdf004c580/6.10.rar";
             string tempFilePath = Path.Combine(Path.GetTempPath(), "downloaded.rar");
             Console.WriteLine("Please enter the full path where the files should be extracted:");
             string extractPath = Console.ReadLine();

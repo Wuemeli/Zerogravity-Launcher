@@ -69,7 +69,7 @@ namespace Project_ZeroGravity_Loader
 
         static bool IsUpdateAvailable(string latestVersion)
         {
-            string currentVersion = "2.1.3";
+            string currentVersion = "2.1.4";
             Log("Current version: " + currentVersion);
 
             return string.Compare(currentVersion, latestVersion, StringComparison.OrdinalIgnoreCase) < 0;
