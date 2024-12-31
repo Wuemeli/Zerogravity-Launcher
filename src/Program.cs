@@ -32,9 +32,8 @@ namespace Project_ZeroGravity_Loader
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            //Use Squirrel.Windows with Github
-            string updateUrl = "https://autoupdate.zerogravity.rip/version.txt";
-            string downloadUrl = "https://autoupdate.zerogravity.rip/update.exe";
+            string updateUrl = "https://backend.zerogravity.rip/launcher/version";
+            string downloadUrl = "https://backend.zerogravity.rip/launcher/update.exe";
 
             try
             {
